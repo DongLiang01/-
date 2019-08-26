@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FF6E53EFC0624A15C87B307 /* libPods-mythAndFish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71585CAE58F20CFCBEF44474 /* libPods-mythAndFish.a */; };
+		846EB50123136175006650FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB50023136175006650FD /* AppDelegate.m */; };
+		846EB50423136175006650FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB50323136175006650FD /* ViewController.m */; };
+		846EB50723136175006650FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846EB50523136175006650FD /* Main.storyboard */; };
+		846EB50923136178006650FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846EB50823136178006650FD /* Assets.xcassets */; };
+		846EB50C23136178006650FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846EB50A23136178006650FD /* LaunchScreen.storyboard */; };
+		846EB50F23136178006650FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB50E23136178006650FD /* main.m */; };
+		846EB51723137056006650FD /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB51623137055006650FD /* BaseRequest.m */; };
+		846EB51A231389BD006650FD /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB519231389BD006650FD /* LoginRequest.m */; };
+		846EB51D2313B408006650FD /* DLUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB51C2313B408006650FD /* DLUserView.m */; };
+		846EB5212313B860006650FD /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB51F2313B85F006650FD /* UIButton+Block.m */; };
+		846EB5252313BE95006650FD /* PurchaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5242313BE95006650FD /* PurchaseRequest.m */; };
+		846EB5282313C134006650FD /* DLUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5272313C134006650FD /* DLUserInfoManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68E11575EAD0CE8F5A711230 /* Pods-mythAndFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mythAndFish.debug.xcconfig"; path = "Target Support Files/Pods-mythAndFish/Pods-mythAndFish.debug.xcconfig"; sourceTree = "<group>"; };
+		71585CAE58F20CFCBEF44474 /* libPods-mythAndFish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mythAndFish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5218C43E51BE2AA72D612B /* Pods-mythAndFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mythAndFish.release.xcconfig"; path = "Target Support Files/Pods-mythAndFish/Pods-mythAndFish.release.xcconfig"; sourceTree = "<group>"; };
+		846EB4FC23136175006650FD /* mythAndFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mythAndFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		846EB4FF23136175006650FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		846EB50023136175006650FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		846EB50223136175006650FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		846EB50323136175006650FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		846EB50623136175006650FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		846EB50823136178006650FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846EB50B23136178006650FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		846EB50D23136178006650FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846EB50E23136178006650FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		846EB51523137055006650FD /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		846EB51623137055006650FD /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		846EB518231389BD006650FD /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		846EB519231389BD006650FD /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		846EB51B2313B408006650FD /* DLUserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLUserView.h; sourceTree = "<group>"; };
+		846EB51C2313B408006650FD /* DLUserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLUserView.m; sourceTree = "<group>"; };
+		846EB51E2313B569006650FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		846EB51F2313B85F006650FD /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		846EB5202313B860006650FD /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		846EB5232313BE95006650FD /* PurchaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseRequest.h; sourceTree = "<group>"; };
+		846EB5242313BE95006650FD /* PurchaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseRequest.m; sourceTree = "<group>"; };
+		846EB5262313C134006650FD /* DLUserInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLUserInfoManager.h; sourceTree = "<group>"; };
+		846EB5272313C134006650FD /* DLUserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLUserInfoManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846EB4F923136175006650FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF6E53EFC0624A15C87B307 /* libPods-mythAndFish.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		846EB4F323136175006650FD = {
+			isa = PBXGroup;
+			children = (
+				846EB4FE23136175006650FD /* mythAndFish */,
+				846EB4FD23136175006650FD /* Products */,
+				8951856F83AA141359CEB098 /* Pods */,
+				AF9F65771DE70BEFBB7E013F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846EB4FD23136175006650FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846EB4FC23136175006650FD /* mythAndFish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846EB4FE23136175006650FD /* mythAndFish */ = {
+			isa = PBXGroup;
+			children = (
+				846EB4FF23136175006650FD /* AppDelegate.h */,
+				846EB50023136175006650FD /* AppDelegate.m */,
+				846EB50223136175006650FD /* ViewController.h */,
+				846EB50323136175006650FD /* ViewController.m */,
+				846EB51B2313B408006650FD /* DLUserView.h */,
+				846EB51C2313B408006650FD /* DLUserView.m */,
+				846EB5262313C134006650FD /* DLUserInfoManager.h */,
+				846EB5272313C134006650FD /* DLUserInfoManager.m */,
+				846EB5222313BE4F006650FD /* Request */,
+				846EB51E2313B569006650FD /* PrefixHeader.pch */,
+				846EB5202313B860006650FD /* UIButton+Block.h */,
+				846EB51F2313B85F006650FD /* UIButton+Block.m */,
+				846EB50523136175006650FD /* Main.storyboard */,
+				846EB50823136178006650FD /* Assets.xcassets */,
+				846EB50A23136178006650FD /* LaunchScreen.storyboard */,
+				846EB50D23136178006650FD /* Info.plist */,
+				846EB50E23136178006650FD /* main.m */,
+			);
+			path = mythAndFish;
+			sourceTree = "<group>";
+		};
+		846EB5222313BE4F006650FD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				846EB51523137055006650FD /* BaseRequest.h */,
+				846EB51623137055006650FD /* BaseRequest.m */,
+				846EB518231389BD006650FD /* LoginRequest.h */,
+				846EB519231389BD006650FD /* LoginRequest.m */,
+				846EB5232313BE95006650FD /* PurchaseRequest.h */,
+				846EB5242313BE95006650FD /* PurchaseRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8951856F83AA141359CEB098 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E11575EAD0CE8F5A711230 /* Pods-mythAndFish.debug.xcconfig */,
+				7D5218C43E51BE2AA72D612B /* Pods-mythAndFish.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF9F65771DE70BEFBB7E013F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71585CAE58F20CFCBEF44474 /* libPods-mythAndFish.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846EB4FB23136175006650FD /* mythAndFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846EB51223136178006650FD /* Build configuration list for PBXNativeTarget "mythAndFish" */;
+			buildPhases = (
+				2DDB850E69753A859FD0362B /* [CP] Check Pods Manifest.lock */,
+				846EB4F823136175006650FD /* Sources */,
+				846EB4F923136175006650FD /* Frameworks */,
+				846EB4FA23136175006650FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mythAndFish;
+			productName = mythAndFish;
+			productReference = 846EB4FC23136175006650FD /* mythAndFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846EB4F423136175006650FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = dl;
+				TargetAttributes = {
+					846EB4FB23136175006650FD = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 846EB4F723136175006650FD /* Build configuration list for PBXProject "mythAndFish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 846EB4F323136175006650FD;
+			productRefGroup = 846EB4FD23136175006650FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846EB4FB23136175006650FD /* mythAndFish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846EB4FA23136175006650FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846EB50C23136178006650FD /* LaunchScreen.storyboard in Resources */,
+				846EB50923136178006650FD /* Assets.xcassets in Resources */,
+				846EB50723136175006650FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DDB850E69753A859FD0362B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mythAndFish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846EB4F823136175006650FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846EB5252313BE95006650FD /* PurchaseRequest.m in Sources */,
+				846EB51723137056006650FD /* BaseRequest.m in Sources */,
+				846EB50423136175006650FD /* ViewController.m in Sources */,
+				846EB50F23136178006650FD /* main.m in Sources */,
+				846EB50123136175006650FD /* AppDelegate.m in Sources */,
+				846EB5212313B860006650FD /* UIButton+Block.m in Sources */,
+				846EB5282313C134006650FD /* DLUserInfoManager.m in Sources */,
+				846EB51A231389BD006650FD /* LoginRequest.m in Sources */,
+				846EB51D2313B408006650FD /* DLUserView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		846EB50523136175006650FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846EB50623136175006650FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		846EB50A23136178006650FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846EB50B23136178006650FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		846EB51023136178006650FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		846EB51123136178006650FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		846EB51323136178006650FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E11575EAD0CE8F5A711230 /* Pods-mythAndFish.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LM5Q92D783;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mythAndFish/PrefixHeader.pch;
+				INFOPLIST_FILE = mythAndFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dongliang.mythAndFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		846EB51423136178006650FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5218C43E51BE2AA72D612B /* Pods-mythAndFish.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LM5Q92D783;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mythAndFish/PrefixHeader.pch;
+				INFOPLIST_FILE = mythAndFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dongliang.mythAndFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846EB4F723136175006650FD /* Build configuration list for PBXProject "mythAndFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846EB51023136178006650FD /* Debug */,
+				846EB51123136178006650FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846EB51223136178006650FD /* Build configuration list for PBXNativeTarget "mythAndFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846EB51323136178006650FD /* Debug */,
+				846EB51423136178006650FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 846EB4F423136175006650FD /* Project object */;
+}

@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  mythAndFish
+//
+//  Created by dongliang on 2019/8/26.
+//  Copyright © 2019 dl. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 日志输出,SDK内部使用，RELEASE环境会被屏蔽
+#ifdef DEBUG
+
+#define NSLog(s, ...) {\
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+[dateFormatter setDateFormat:@"YYYY-MM-dd hh:mm:ss:SSS"];\
+NSString *time = [dateFormatter stringFromDate:[NSDate date]];\
+printf( "\n%s  < %s : %d >\n\n%s\n========================\n", \
+[time UTF8String], \
+[[[NSString stringWithUTF8String:__func__] lastPathComponent] UTF8String],\
+__LINE__, \
+[[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String]);\
+}
+
+#else
+
+#define NSLog(s, ...)
+
+#endif
+
+
+
+#import <Masonry.h>
+#import "UIButton+Block.h"
+#import "DLUserInfoManager.h"
+
+#define WeakSelf(weakSelf) __weak __typeof(&*self) weakSelf = self;
+
+#endif /* PrefixHeader_pch */
