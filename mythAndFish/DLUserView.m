@@ -24,18 +24,17 @@
         [self addSubview:self.loginBtn];
         
         [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(@50);
+            make.left.equalTo(@10);
             make.centerY.equalTo(self);
         }];
-        WeakSelf(mySelf)
         [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self);
-            make.left.equalTo(mySelf.nameLabel.mas_right).with.offset(100);
-            make.width.equalTo(@80);
-            make.height.equalTo(@30);
+            make.right.equalTo(self).with.offset(-50);
+            make.width.height.greaterThanOrEqualTo(@1);
         }];
         
-        
+        self.layer.borderWidth = 0.5;
+        self.layer.borderColor = UIColor.blueColor.CGColor;
     }
     return self;
 }
@@ -69,10 +68,18 @@
         [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
         _loginBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         WeakSelf(mySelf)
-        [_loginBtn block:^(id sender) {
-            if (mySelf.loginBlock) {
-                mySelf.loginBlock();
+        [_loginBtn block:^(UIButton *sender) {
+            NSLog(@"测试%@",sender.titleLabel.text);
+            if ([sender.titleLabel.text isEqualToString:@"登录"]) {
+                if (mySelf.loginBlock) {
+                    mySelf.loginBlock();
+                }
+            }else{
+                if (mySelf.signOutBlock) {
+                    mySelf.signOutBlock();
+                }
             }
+            
         }];
     }
     return _loginBtn;

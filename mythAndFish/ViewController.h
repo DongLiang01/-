@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DLUserView.h"
+#import "ListModel.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) DLUserView *userView1;
+@property (nonatomic, strong) DLUserView *userView2;
+@property (nonatomic, strong) DLUserView *userView3;
+@property (nonatomic, strong) DLUserView *userView4;
+@property (nonatomic, strong) UITableView *listTableView;
+@property (nonatomic, strong) NSMutableArray *items;
+
+-(NSString *)getNowYearMonthDay;
+- (CGFloat)getCountDownStringWithEndTime:(NSString *)endTime;
 
 @end
 

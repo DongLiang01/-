@@ -10,4 +10,10 @@
 
 @implementation ListModel
 
++ (nullable NSDictionary<NSString *, id> *)modelCustomPropertyMapper {
+    return @{
+        @"contentId": @"id",
+             };
+}
+
 @end

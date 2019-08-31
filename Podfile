@@ -9,5 +9,6 @@ target 'mythAndFish' do
 
 pod 'AFNetworking', '3.2.1'
 pod 'Masonry', '1.1.0'
+pod 'skpsmtpmessage'
 
 end

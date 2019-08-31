@@ -34,6 +34,7 @@ __LINE__, \
 #import <Masonry.h>
 #import "UIButton+Block.h"
 #import "DLUserInfoManager.h"
+#import "YYKit/YYModel/YYModel.h"
 
 #define WeakSelf(weakSelf) __weak __typeof(&*self) weakSelf = self;
 

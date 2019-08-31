@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController (action)
 
+-(void)addMythActionitWithToken:(NSString *)token;
+
 @end
 
 NS_ASSUME_NONNULL_END

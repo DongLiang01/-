@@ -1,14 +1,14 @@
 //
-//  PurchaseRequest.m
+//  MythCheckRequest.m
 //  mythAndFish
 //
-//  Created by dongliang on 2019/8/26.
+//  Created by 董良 on 2019/8/31.
 //  Copyright © 2019 dl. All rights reserved.
 //
 
-#import "PurchaseRequest.h"
+#import "MythCheckRequest.h"
 
-@implementation PurchaseRequest
+@implementation MythCheckRequest
 
 -(instancetype)initWithId:(NSString *)goodsId token:(NSString *)token{
     if (self = [super init]) {
@@ -19,7 +19,7 @@
 }
 
 -(NSString *)requestUrl{
-    return @"http://fuzai.hunyuanjie.com/api/app/index/flash_buy";
+    return @"http://fuzai.hunyuanjie.com/api/app/index/check_flush_open";
 }
 
 -(RequstMethod)requestMethod{
