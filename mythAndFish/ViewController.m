@@ -12,8 +12,10 @@
 #import "ListRequest.h"
 #import "ViewController+view.h"
 #import "ViewController+action.h"
+#import "SKPSMTPMessage.h"
+#import "NSData+Base64Additions.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource,SKPSMTPMessageDelegate>
 
 @property (nonatomic, strong) NSMutableArray *mythArray;
 @property (nonatomic, strong) NSMutableArray *fishArray;
@@ -51,16 +53,71 @@
     self.view.backgroundColor = UIColor.greenColor;
     [self  initUI];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSDate *nowDate = [NSDate date]; // 当前日期
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"yyyy-MM-dd HH-mm-ss";
-        NSString *str = [formatter stringFromDate:nowDate];
-        NSLog(@"现在的时间是%@",str);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSDate *nowDate = [NSDate date]; // 当前日期
+//        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//        formatter.dateFormat = @"yyyy-MM-dd HH-mm-ss";
+//        NSString *str = [formatter stringFromDate:nowDate];
+//        NSLog(@"现在的时间是%@",str);
+//    });
+    [self sendEmail];
+}
+
+// 发送邮件 附件
+- (void)sendEmail {
+    SKPSMTPMessage *myMessage = [[SKPSMTPMessage alloc] init];
+    
+    myMessage.fromEmail = @"17801081312@163.com"; //发送邮箱
+    myMessage.toEmail = @"380210871@qq.com"; //收件邮箱
+//    myMessage.ccEmail = @"380210871@qq.com"; //抄送   被QQ服务器退回
+    
+    myMessage.relayHost = @"smtp.163.com"; //发送地址host 网易企业邮箱
+    myMessage.requiresAuth = YES;
+    myMessage.login = @"17801081312@163.com"; //发送邮箱的用户名
+    myMessage.pass = @"dl900713";  //发送邮箱的密码
+    
+    myMessage.wantsSecure = YES;
+    myMessage.subject = @"Main theme"; //邮件主题
+    myMessage.delegate = self;
+    
+    // 文本
+    NSString *content = [NSString stringWithCString:"测试撒的说法的方式内容  \n /n /t fdafsasdf阿斯达发撒发多少  \\n dsasadfs多大事发的" encoding:NSUTF8StringEncoding];
+    
+    NSDictionary *param =@{kSKPSMTPPartContentTypeKey :@"text/plain; charset=UTF-8",
+                           kSKPSMTPPartMessageKey : content,
+                           kSKPSMTPPartContentTransferEncodingKey :@"8bit"};
+    
+    // 附件
+    NSString *txtPath = [[NSBundle mainBundle] pathForResource:@"AAAA" ofType:@"txt"];
+    NSData *txtData = [NSData dataWithContentsOfFile:txtPath];
+    
+    if (txtData.length > 0) {
+        NSDictionary *txtPart = @{kSKPSMTPPartContentTypeKey:@"text/directory;\r\n\tx-unix-mode=0644;\r\n\tname=\"AAAA.txt\"",
+                                  kSKPSMTPPartContentDispositionKey:@"attachment;\r\n\tfilename=\"OSCE调试Log.txt\"",
+                                  kSKPSMTPPartMessageKey:[txtData encodeBase64ForData],
+                                  kSKPSMTPPartContentTransferEncodingKey:@"base64"};
+        
+        myMessage.parts = [NSArray arrayWithObjects:param, txtPart,nil];
+    } else {
+        myMessage.parts = [NSArray arrayWithObjects:param, nil];
+    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+        [myMessage send];
+        [[NSRunLoop currentRunLoop] run]; //这里开启一下runloop要不然重试其他端口的操作不会进行
     });
 }
 
+// 发送成功
+- (void)messageSent:(SKPSMTPMessage *)message {
+    // 邮件发送成功
+    NSLog(@"发送成功");
+}
 
+// 发送失败
+- (void)messageFailed:(SKPSMTPMessage *)message error:(NSError *)error {
+    // 邮件发送失败
+    NSLog(@"发送失败%@ -- %@",error,message);
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.items.count;
