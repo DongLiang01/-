@@ -13,7 +13,7 @@
 -(instancetype)initWithPhone:(NSString *)mediaId password:(NSString *)videoId{
     if (self = [super init]) {
         
-        [self.requestParamter setValue:@"17136916631" forKey:@"mobile"];
+        [self.requestParamter setValue:mediaId forKey:@"mobile"];
         [self.requestParamter setValue:@"dongliang8355279" forKey:@"password"];
         [self.requestParamter setValue:@(true) forKey:@"isSave"];
         

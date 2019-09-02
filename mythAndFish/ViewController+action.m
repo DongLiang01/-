@@ -22,22 +22,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢白虎。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"7" user:@"阿良"];
+                    [self mythToken:token id:@"7" name:@"白虎" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢白虎。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"7" user:@"良1"];
+                    [self mythToken:token id:@"7" name:@"白虎" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢白虎。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"7" user:@"良2"];
+                    [self mythToken:token id:@"7" name:@"白虎" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢白虎。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"7" user:@"良3"];
+                    [self mythToken:token id:@"7" name:@"白虎" user:@"良3"];
                 });
             }
         });
@@ -50,22 +50,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢玄武。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"8" user:@"阿良"];
+                    [self mythToken:token id:@"8" name:@"玄武" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢玄武。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"8" user:@"良1"];
+                    [self mythToken:token id:@"8" name:@"玄武" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢玄武。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"8" user:@"良2"];
+                    [self mythToken:token id:@"8" name:@"玄武" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢玄武。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"8" user:@"良3"];
+                    [self mythToken:token id:@"8" name:@"玄武" user:@"良3"];
                 });
             }
         });
@@ -78,22 +78,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢青龙。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"17" user:@"阿良"];
+                    [self mythToken:token id:@"17" name:@"青龙" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢青龙。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"17" user:@"良1"];
+                    [self mythToken:token id:@"17" name:@"青龙" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢青龙。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"17" user:@"良2"];
+                    [self mythToken:token id:@"17" name:@"青龙" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢青龙。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"17" user:@"良3"];
+                    [self mythToken:token id:@"17" name:@"青龙" user:@"良3"];
                 });
             }
         });
@@ -106,22 +106,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢麒麟。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"5" user:@"阿良"];
+                    [self mythToken:token id:@"5" name:@"麒麟" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢麒麟。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"5" user:@"良1"];
+                    [self mythToken:token id:@"5" name:@"麒麟" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢麒麟。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"5" user:@"良2"];
+                    [self mythToken:token id:@"5" name:@"麒麟" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢麒麟。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"5" user:@"良3"];
+                    [self mythToken:token id:@"5" name:@"麒麟" user:@"良3"];
                 });
             }
         });
@@ -134,22 +134,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢貔貅。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"16" user:@"阿良"];
+                    [self mythToken:token id:@"16" name:@"貔貅" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢貔貅。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"16" user:@"良1"];
+                    [self mythToken:token id:@"16" name:@"貔貅" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢貔貅。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"16" user:@"良2"];
+                    [self mythToken:token id:@"16" name:@"貔貅" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢貔貅。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"16" user:@"良3"];
+                    [self mythToken:token id:@"16" name:@"貔貅" user:@"良3"];
                 });
             }
         });
@@ -162,22 +162,22 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢凤凰。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"6" user:@"阿良"];
+                    [self mythToken:token id:@"6" name:@"凤凰" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢凤凰。。。%@",[NSThread currentThread]);
-                     [self mythToken:token id:@"6" user:@"良1"];
+                     [self mythToken:token id:@"6" name:@"凤凰" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢凤凰。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"6" user:@"良2"];
+                    [self mythToken:token id:@"6" name:@"凤凰" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢凤凰。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"6" user:@"良3"];
+                    [self mythToken:token id:@"6" name:@"凤凰" user:@"良3"];
                 });
             }
         });
@@ -190,45 +190,63 @@
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，阿良开始抢朱雀。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"4" user:@"阿良"];
+                    [self mythToken:token id:@"4" name:@"朱雀" user:@"阿良"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良1开始抢朱雀。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"4" user:@"良1"];
+                    [self mythToken:token id:@"4" name:@"朱雀" user:@"良1"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良2开始抢朱雀。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"4" user:@"良2"];
+                    [self mythToken:token id:@"4" name:@"朱雀" user:@"良2"];
                 });
             }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
                 dispatch_async(global, ^{
                     NSLog(@"到点了，良3开始抢朱雀。。。%@",[NSThread currentThread]);
-                    [self mythToken:token id:@"4" user:@"良3"];
+                    [self mythToken:token id:@"4" name:@"朱雀" user:@"良3"];
                 });
             }
         });
     }
 }
 
-///神话的购养点击
--(void)mythToken:(NSString *)token  id:(NSString *)contentId user:(NSString *)user{
+///神话点击领养
+-(void)mythToken:(NSString *)token  id:(NSString *)contentId name:(NSString *)name user:(NSString *)user{
     if (!token) {
         return;
     }
     PurchaseRequest *request = [[PurchaseRequest alloc] initWithId:@"7" token:token];
     [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@购买接口请求%@",user,responseObject);
+        
+        if (![[NSString stringWithFormat:@"%@",responseObject[@"status_code"]] isEqualToString:@"200"]) {
+            return;
+        }
+        
+        ///检查接口
         MythCheckRequest *request = [[MythCheckRequest alloc] initWithId:contentId token:token];
         [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"%@远古购买接口后的检查请求%@",user,responseObject);
-            
+            if (![[NSString stringWithFormat:@"%@",responseObject[@"status_code"]] isEqualToString:@"200"]) {
+                return;
+            }
+            ///三分钟后获取领养记录
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(180 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 PurchaseResultRequest *request = [[PurchaseResultRequest alloc] initWithToken:token];
                 [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    NSLog(@"%@领养记录查询成功",user);
-                    [self sendEmail:[NSString stringWithFormat:@"%@领养成功",user] theme:@"远古神话"];
+                    NSLog(@"%@领养记录查询成功%@",user,responseObject);
+                    if (![[NSString stringWithFormat:@"%@",responseObject[@"status_code"]] isEqualToString:@"200"]) {
+                        return;
+                    }
+                    NSDictionary *dic = responseObject[@"data"];
+                    NSArray *array = dic[@"loglist"];
+                    NSDictionary *diconary = array.lastObject;
+                    if (diconary && [[NSString stringWithFormat:@"%@",diconary[@"status"]] isEqualToString:@"3"] && [diconary[@"pig_name"] isEqualToString:name]) {
+                        ///领养成功邮件通知
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self sendEmail:[NSString stringWithFormat:@"%@领养成功",user] theme:@"yuan gu shen hua"];
+                        });
+                    }
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     NSLog(@"%@领养记录查询失败",user);
                 }];
