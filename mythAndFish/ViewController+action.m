@@ -9,6 +9,7 @@
 #import "ViewController+action.h"
 #import "PurchaseRequest.h"
 #import "MythCheckRequest.h"
+#import "PurchaseResultRequest.h"
 
 @implementation ViewController (action)
 
@@ -222,6 +223,17 @@
         MythCheckRequest *request = [[MythCheckRequest alloc] initWithId:contentId token:token];
         [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             NSLog(@"%@远古购买接口后的检查请求%@",user,responseObject);
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(180 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                PurchaseResultRequest *request = [[PurchaseResultRequest alloc] initWithToken:token];
+                [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    NSLog(@"%@领养记录查询成功",user);
+                    [self sendEmail:[NSString stringWithFormat:@"%@领养成功",user] theme:@"远古神话"];
+                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                    NSLog(@"%@领养记录查询失败",user);
+                }];
+            });
+            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"%@购买接口后检查请求失败",user);
         }];

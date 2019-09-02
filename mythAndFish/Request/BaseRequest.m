@@ -17,6 +17,13 @@ static AFHTTPSessionManager *manager ;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
         manager.requestSerializer.timeoutInterval = 30;
+        ///设置请求内容的类型
+        [manager.requestSerializer setValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+        [manager.requestSerializer setValue:@"application/vnd.qukuailian.v1+json" forHTTPHeaderField:@"Accept"];
+//        ///设置请求内容的长度
+//        [manager.requestSerializer setValue:[NSString stringWithFormat:@"%ld", (unsigned long)[jsonStr length]] forHTTPHeaderField:@"Content-Length"];
+        ///设置请求的编码类型
+        [manager.requestSerializer setValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
     });
     return manager;
 }

@@ -52,19 +52,10 @@
     
     self.view.backgroundColor = UIColor.greenColor;
     [self  initUI];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        NSDate *nowDate = [NSDate date]; // 当前日期
-//        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-//        formatter.dateFormat = @"yyyy-MM-dd HH-mm-ss";
-//        NSString *str = [formatter stringFromDate:nowDate];
-//        NSLog(@"现在的时间是%@",str);
-//    });
-    [self sendEmail];
 }
 
 // 发送邮件 附件
-- (void)sendEmail {
+- (void)sendEmail:(NSString *)str theme:(NSString *)theme {
     SKPSMTPMessage *myMessage = [[SKPSMTPMessage alloc] init];
     
     myMessage.fromEmail = @"17801081312@163.com"; //发送邮箱
@@ -77,11 +68,13 @@
     myMessage.pass = @"dl900713";  //发送邮箱的密码
     
     myMessage.wantsSecure = YES;
-    myMessage.subject = @"Main theme"; //邮件主题
+    myMessage.subject = theme; //邮件主题
     myMessage.delegate = self;
     
     // 文本
-    NSString *content = [NSString stringWithCString:"测试撒的说法的方式内容  \n /n /t fdafsasdf阿斯达发撒发多少  \\n dsasadfs多大事发的" encoding:NSUTF8StringEncoding];
+    const char *p1 = [str UTF8String];
+//    const char *p2 = [str cStringUsingEncoding:NSASCIIStringEncoding];
+    NSString *content = [NSString stringWithCString:p1 encoding:NSUTF8StringEncoding];
     
     NSDictionary *param =@{kSKPSMTPPartContentTypeKey :@"text/plain; charset=UTF-8",
                            kSKPSMTPPartMessageKey : content,

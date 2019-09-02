@@ -12,7 +12,7 @@
 
 -(instancetype)initWithId:(NSString *)goodsId token:(NSString *)token{
     if (self = [super init]) {
-        [self.requestParamter setValue:@"5" forKey:@"id"];
+        [self.requestParamter setValue:goodsId forKey:@"id"];
         [self.requestParamter setValue:token forKey:@"token"];
     }
     return self;

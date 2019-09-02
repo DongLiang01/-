@@ -92,6 +92,7 @@
 		846EB5212313B860006650FD /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB51F2313B85F006650FD /* UIButton+Block.m */; };
 		846EB5252313BE95006650FD /* PurchaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5242313BE95006650FD /* PurchaseRequest.m */; };
 		846EB5282313C134006650FD /* DLUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5272313C134006650FD /* DLUserInfoManager.m */; };
+		84BACEB4231CE22500E99E93 /* PurchaseResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BACEB3231CE22500E99E93 /* PurchaseResultRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +270,8 @@
 		846EB5242313BE95006650FD /* PurchaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseRequest.m; sourceTree = "<group>"; };
 		846EB5262313C134006650FD /* DLUserInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLUserInfoManager.h; sourceTree = "<group>"; };
 		846EB5272313C134006650FD /* DLUserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLUserInfoManager.m; sourceTree = "<group>"; };
+		84BACEB2231CE22500E99E93 /* PurchaseResultRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseResultRequest.h; sourceTree = "<group>"; };
+		84BACEB3231CE22500E99E93 /* PurchaseResultRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseResultRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -584,6 +587,8 @@
 				846EB5242313BE95006650FD /* PurchaseRequest.m */,
 				3B9E961A231A6F2C00C99687 /* MythCheckRequest.h */,
 				3B9E961B231A6F2C00C99687 /* MythCheckRequest.m */,
+				84BACEB2231CE22500E99E93 /* PurchaseResultRequest.h */,
+				84BACEB3231CE22500E99E93 /* PurchaseResultRequest.m */,
 				3B9E9617231A699C00C99687 /* ListRequest.h */,
 				3B9E9618231A699C00C99687 /* ListRequest.m */,
 			);
@@ -780,6 +785,7 @@
 				3B9E960023156D2F00C99687 /* NSDate+YYAdd.m in Sources */,
 				3B9E95E423156D2F00C99687 /* YYWeakProxy.m in Sources */,
 				846EB51A231389BD006650FD /* LoginRequest.m in Sources */,
+				84BACEB4231CE22500E99E93 /* PurchaseResultRequest.m in Sources */,
 				3B9E95D523156D2F00C99687 /* YYTextDebugOption.m in Sources */,
 				846EB51D2313B408006650FD /* DLUserView.m in Sources */,
 				3B9E95E823156D2F00C99687 /* YYControl.m in Sources */,

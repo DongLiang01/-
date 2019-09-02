@@ -21,6 +21,8 @@
 
 -(NSString *)getNowYearMonthDay;
 - (CGFloat)getCountDownStringWithEndTime:(NSString *)endTime;
+// 发送邮件 附件
+- (void)sendEmail:(NSString *)str theme:(NSString *)theme;
 
 @end
 
