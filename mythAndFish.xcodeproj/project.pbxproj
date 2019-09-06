@@ -93,6 +93,7 @@
 		846EB5252313BE95006650FD /* PurchaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5242313BE95006650FD /* PurchaseRequest.m */; };
 		846EB5282313C134006650FD /* DLUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EB5272313C134006650FD /* DLUserInfoManager.m */; };
 		84BACEB4231CE22500E99E93 /* PurchaseResultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BACEB3231CE22500E99E93 /* PurchaseResultRequest.m */; };
+		84BACEB7231F3EC100E99E93 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BACEB6231F3EC100E99E93 /* ListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +273,8 @@
 		846EB5272313C134006650FD /* DLUserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLUserInfoManager.m; sourceTree = "<group>"; };
 		84BACEB2231CE22500E99E93 /* PurchaseResultRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseResultRequest.h; sourceTree = "<group>"; };
 		84BACEB3231CE22500E99E93 /* PurchaseResultRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseResultRequest.m; sourceTree = "<group>"; };
+		84BACEB5231F3EC100E99E93 /* ListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		84BACEB6231F3EC100E99E93 /* ListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -552,6 +555,8 @@
 				846EB50023136175006650FD /* AppDelegate.m */,
 				846EB50223136175006650FD /* ViewController.h */,
 				846EB50323136175006650FD /* ViewController.m */,
+				84BACEB5231F3EC100E99E93 /* ListCell.h */,
+				84BACEB6231F3EC100E99E93 /* ListCell.m */,
 				3B9E96112315758600C99687 /* ViewController+view.h */,
 				3B9E96122315758600C99687 /* ViewController+view.m */,
 				3B9E961423158C3400C99687 /* ViewController+action.h */,
@@ -724,6 +729,7 @@
 				3B9E95FF23156D2F00C99687 /* NSObject+YYAddForARC.m in Sources */,
 				3B9E95CB23156D2F00C99687 /* YYMemoryCache.m in Sources */,
 				3B9E95E123156D2F00C99687 /* UIView+YYText.m in Sources */,
+				84BACEB7231F3EC100E99E93 /* ListCell.m in Sources */,
 				3B9E95FC23156D2F00C99687 /* NSThread+YYAdd.m in Sources */,
 				3B9E95F323156D2F00C99687 /* UIGestureRecognizer+YYAdd.m in Sources */,
 				3B9E960623156D2F00C99687 /* CALayer+YYAdd.m in Sources */,

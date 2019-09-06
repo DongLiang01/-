@@ -15,9 +15,12 @@
 
 -(void)addMythActionitWithToken:(NSString *)token{
    ///白虎
-    CGFloat t1 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 13:20:20",[self getNowYearMonthDay]]];
+    CGFloat t1 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 13:20:00",[self getNowYearMonthDay]]];
     if (t1 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyBaiHu) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -42,10 +45,44 @@
             }
         });
     }
+    ///幸运大抽奖
+    CGFloat t8 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 13:30:00",[self getNowYearMonthDay]]];
+    if (t1 >= 0){
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyHuaFei) {
+                return ;
+            }
+            dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
+                dispatch_async(global, ^{
+                    NSLog(@"到点了，阿良开始抢话费。。。%@",[NSThread currentThread]);
+                    [self mythToken:token id:@"23" name:@"话费" user:@"阿良"];
+                });
+            }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token1]) {
+                dispatch_async(global, ^{
+                    NSLog(@"到点了，良1开始抢话费。。。%@",[NSThread currentThread]);
+                    [self mythToken:token id:@"23" name:@"话费" user:@"良1"];
+                });
+            }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token2]) {
+                dispatch_async(global, ^{
+                    NSLog(@"到点了，良2开始抢话费。。。%@",[NSThread currentThread]);
+                    [self mythToken:token id:@"23" name:@"话费" user:@"良2"];
+                });
+            }else if ([token isEqualToString:[DLUserInfoManager defaultManager].token3]) {
+                dispatch_async(global, ^{
+                    NSLog(@"到点了，良3开始抢话费。。。%@",[NSThread currentThread]);
+                    [self mythToken:token id:@"23" name:@"话费" user:@"良3"];
+                });
+            }
+        });
+    }
     ///玄武
      CGFloat t2 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 14:20:20",[self getNowYearMonthDay]]];
     if (t2 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyXuanWu) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -71,9 +108,12 @@
         });
     }
     ///青龙
-    CGFloat t3 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 15:20:20",[self getNowYearMonthDay]]];
+    CGFloat t3 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 15:20:05",[self getNowYearMonthDay]]];
     if (t3 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyQingLong) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -102,6 +142,9 @@
     CGFloat t4 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 16:20:20",[self getNowYearMonthDay]]];
     if (t4 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyQiLin) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -130,6 +173,9 @@
     CGFloat t5 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 17:20:20",[self getNowYearMonthDay]]];
     if (t5 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyPiXiu) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -155,9 +201,12 @@
         });
     }
     ///凤凰
-    CGFloat t6 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 18:20:20",[self getNowYearMonthDay]]];
+    CGFloat t6 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 18:20:00",[self getNowYearMonthDay]]];
     if (t6 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyFengHuang) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -186,6 +235,9 @@
     CGFloat t7 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 19:20:20",[self getNowYearMonthDay]]];
     if (t7 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (![DLUserInfoManager defaultManager].buyZhuQue) {
+                return ;
+            }
             dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
             if ([token isEqualToString:[DLUserInfoManager defaultManager].token]) {
                 dispatch_async(global, ^{
@@ -217,7 +269,7 @@
     if (!token) {
         return;
     }
-    PurchaseRequest *request = [[PurchaseRequest alloc] initWithId:@"7" token:token];
+    PurchaseRequest *request = [[PurchaseRequest alloc] initWithId:contentId token:token];
     [request startWithCompletionBlockWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (![[NSString stringWithFormat:@"%@",responseObject[@"status_code"]] isEqualToString:@"200"]) {
@@ -241,7 +293,7 @@
                     NSDictionary *dic = responseObject[@"data"];
                     NSArray *array = dic[@"loglist"];
                     NSDictionary *diconary = array.lastObject;
-                    if (diconary && [[NSString stringWithFormat:@"%@",diconary[@"status"]] isEqualToString:@"3"] && [diconary[@"pig_name"] isEqualToString:name]) {
+                    if (diconary && [[NSString stringWithFormat:@"%@",diconary[@"status"]] isEqualToString:@"1"] && [diconary[@"pig_name"] isEqualToString:name]) {
                         ///领养成功邮件通知
                         dispatch_async(dispatch_get_main_queue(), ^{
                             [self sendEmail:[NSString stringWithFormat:@"%@领养成功",user] theme:@"yuan gu shen hua"];

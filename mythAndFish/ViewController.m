@@ -14,6 +14,7 @@
 #import "ViewController+action.h"
 #import "SKPSMTPMessage.h"
 #import "NSData+Base64Additions.h"
+#import "ListCell.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource,SKPSMTPMessageDelegate>
 
@@ -129,18 +130,18 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+    ListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ListCell class]) forIndexPath:indexPath];
     switch (indexPath.section) {
         case 0:
         {
             ListModel *model = _mythArray[indexPath.row];
-             cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",model.name,model.contentId];
+             cell.model = model;
         }
             break;
         case 1:
         {
             ListModel *model = _fishArray[indexPath.row];
-            cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",model.name,model.contentId];
+            cell.model = model;
         }
             break;
         default:
@@ -314,7 +315,7 @@
         _listTableView.delegate = self;
         _listTableView.dataSource = self;
         _listTableView.backgroundColor = [UIColor whiteColor];
-        [_listTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+        [_listTableView registerClass:[ListCell class] forCellReuseIdentifier:NSStringFromClass([ListCell class])];
     }
     return _listTableView;
 }
