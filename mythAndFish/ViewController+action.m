@@ -77,7 +77,7 @@
         });
     }
     ///玄武
-     CGFloat t2 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 14:20:20",[self getNowYearMonthDay]]];
+     CGFloat t2 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 14:20:03",[self getNowYearMonthDay]]];
     if (t2 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             if (![DLUserInfoManager defaultManager].buyXuanWu) {
@@ -108,7 +108,7 @@
         });
     }
     ///青龙
-    CGFloat t3 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 15:20:05",[self getNowYearMonthDay]]];
+    CGFloat t3 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 15:20:03",[self getNowYearMonthDay]]];
     if (t3 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             if (![DLUserInfoManager defaultManager].buyQingLong) {
@@ -139,7 +139,7 @@
         });
     }
     ///麒麟
-    CGFloat t4 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 16:20:20",[self getNowYearMonthDay]]];
+    CGFloat t4 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 16:20:03",[self getNowYearMonthDay]]];
     if (t4 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             if (![DLUserInfoManager defaultManager].buyQiLin) {
@@ -170,7 +170,7 @@
         });
     }
     ///貔貅
-    CGFloat t5 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 17:20:20",[self getNowYearMonthDay]]];
+    CGFloat t5 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 17:20:03",[self getNowYearMonthDay]]];
     if (t5 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             if (![DLUserInfoManager defaultManager].buyPiXiu) {
@@ -232,7 +232,7 @@
         });
     }
     ///朱雀
-    CGFloat t7 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 19:20:20",[self getNowYearMonthDay]]];
+    CGFloat t7 = [self getCountDownStringWithEndTime:[NSString stringWithFormat:@"%@ 19:20:03",[self getNowYearMonthDay]]];
     if (t7 >= 0) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             if (![DLUserInfoManager defaultManager].buyZhuQue) {
